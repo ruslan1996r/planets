@@ -1,0 +1,106 @@
+.planets {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.planet {
+	cursor: pointer;
+	width: 300px;
+	height: 300px;
+	background-size: cover;
+	padding: 15px;
+	margin: 10px;
+	transition: 0.8s;
+	background-size: 120%;
+}
+
+.planet:hover {
+	transition: 0.8s;
+	background-size: 130%;
+}
+
+.planet p {
+	margin: 0.5em;
+}
+
+.planet h2 {
+	text-align: center;
+	font-size: 30px;
+	margin-top: 10px;
+}
+
+.planet-info {
+	margin: 0 10em 10em;
+}
+.planet-info h1,
+.filter h1 {
+	font-size: 50px;
+	text-align: center;
+}
+
+.planet-info img {
+	max-width: 500px;
+	max-height: 500px;
+	object-fit: contain;
+}
+
+.planet-info h3 {
+	margin-top: 0;
+}
+
+.planet-info h4 {
+	font-size: 55px;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: right;
+	margin: 10px 0;
+}
+.planet-info > div {
+	display: flex;
+}
+
+.info-container {
+	width: 50%;
+	margin: 0 2em;
+}
+.info-container span {
+	color: #8686cd;
+}
+
+.empty {
+	color: #e4e420;
+}
+
+.filter {
+	border-bottom: 1px solid white;
+	margin-bottom: 1em;
+	padding-bottom: 2em;
+	text-align: center;
+}
+.filter fieldset {
+	font-size: 20px;
+	display: inline-block;
+	border: 0;
+}
+
+.filter select,
+.filter .findField {
+	border: none;
+	outline: none;
+	border-bottom: 1px solid white;
+	width: 300px;
+	font-size: 20px;
+	padding-bottom: 0.5em;
+}
+
+.filter i {
+	font-size: 2em;
+	cursor: pointer;
+}
+
+.filter select,
+label {
+	cursor: pointer;
+	margin: 0 0.5em;
+}
