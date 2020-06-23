@@ -38,7 +38,8 @@
 }
 
 .planet-info {
-	margin: 0 10em 10em;
+	padding: 15px;
+	margin-bottom: 10em;
 }
 .planet-info h1,
 .filter h1 {
@@ -71,7 +72,7 @@
 
 .info-container {
 	width: 50%;
-	margin: 0 2em;
+	margin: 0 1em;
 }
 .info-container span {
 	color: #8686cd;
