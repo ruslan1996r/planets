@@ -7,19 +7,9 @@ import PlanetInfo from './PlanetInfo'
 function Planets() {
     const { planets, selectPlanet, selectedPlanet } = useContext(planetContext)
 
-    // function x(index) {
-    //     let promise = new Promise(function (resolve, reject) {
-    //         setTimeout(function () {
-    //             resolve('done!');
-    //         }, (index + 1) * 200);
-    //     });
-    //     return promise;
-    // }
-
     return (
         <div className="planets">
             {planets.length ? planets.map((planet, i) => {
-                {/* const r = x(i).then(res => console.log(res, "res??")) */ }
                 return (
                     <Planet
                         i={i}
