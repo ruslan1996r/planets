@@ -11,10 +11,19 @@ function PlanetInfo({ selectPlanet, selectedPlanet: {
     atmosphericConstituents,
     img = "",
 } }) {
+
+    const toSelectPlanet = () => {
+        selectPlanet(null)
+    }
+
     return (
         <div className="planet-info">
-            <h4 onClick={() => { selectPlanet(null) }}>×</h4>
-            <h1>{name}</h1>
+            <div>
+                <h1>{name}</h1>
+                <a href="#header" onClick={() => toSelectPlanet()}>
+                    <h4 id="close">×</h4>
+                </a>
+            </div>
             <div>
                 <img src={img} alt={name} />
                 <div className="info-container">

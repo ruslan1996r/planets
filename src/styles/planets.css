@@ -1,13 +1,14 @@
 .planets {
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(3, 330px);
+	grid-column-gap: 50px;
 	justify-content: center;
 }
 
 .planet {
-	cursor: pointer;
-	width: 300px;
-	height: 300px;
+	font-size: 0px;
+	width: 0px;
+	height: 0px;
 	background-size: cover;
 	padding: 15px;
 	margin: 10px;
@@ -24,10 +25,16 @@
 	margin: 0.5em;
 }
 
-.planet h2 {
+.planet a h2 {
+	cursor: pointer;
+	color: white;
 	text-align: center;
-	font-size: 30px;
+	font-size: 0px;
 	margin-top: 10px;
+	transition: 0.8s;
+}
+.planet a {
+	font-size: 0;
 }
 
 .planet-info {
@@ -58,6 +65,8 @@
 }
 .planet-info > div {
 	display: flex;
+	width: 70vw;
+	justify-content: space-between;
 }
 
 .info-container {

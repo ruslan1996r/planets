@@ -8,16 +8,22 @@ body {
 		'Droid Sans', 'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
 }
 
 body,
 input,
 select,
-option {
+option,
+a {
 	background-color: #242424;
 	color: #e0dfdf;
 }
 
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a {
+	text-decoration: none;
 }

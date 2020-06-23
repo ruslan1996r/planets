@@ -34,7 +34,7 @@ function Filter({ refClose }) {
 
     return (
         <div ref={refClose} className="filter">
-            <h1>Planets</h1>
+            <h1 id="header">Planets</h1>
             <input
                 className="findField"
                 value={findString}
